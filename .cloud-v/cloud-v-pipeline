@@ -30,7 +30,7 @@ node('J-TESTVM-1') {
             fi
             echo "export SIMDE_PATH=$(pwd)" > testvm_pwd.sh
         '''
-        // stash includes: 'testvm_pwd.sh', name: 'testvm_pwd.sh'
+        stash includes: 'testvm_pwd.sh', name: 'testvm_pwd.sh'
     }
 }
 node('J-K230-1') {
